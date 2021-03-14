@@ -1,0 +1,286 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.3;
+    overflow-x: hidden;
+}
+
+#loader{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top:0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity .3s;
+}
+
+#loaderimg{
+  width: 10vw;
+}
+
+.bg{
+  background-color: none;
+  position: fixed;
+  height: 100vh;;
+  width: 100vw;
+  top:0;
+  left: 0;
+  overflow: hidden;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+#bgimg{
+  position: fixed;
+  width: 100vw;
+  top:0;
+  left: 0;
+}
+
+@font-face {
+  font-family: "Attlia";
+  src: url("AttilaSans-Regular.woff2") format("woff2"),
+       url("AttilaSans-Regular.woff") format("woff");
+}
+
+.logo{
+   cursor: default;
+   font-family: "Attlia";
+   font-size: 5vw;
+   position: fixed;
+   top:0vh;
+   left:1vw;
+   width: 65vw;
+   color: #23431d;
+}
+
+.logopart{
+    transition: .3s ease;
+    color: #23431d;
+    background-color: white;
+} 
+
+#lt{
+   position: absolute;
+   overflow: hidden;
+   width:20%;
+   left:0%;
+   top: 0%;
+}
+#lm{
+   visibility:visible;
+   position: absolute;
+   overflow: hidden;
+   width:62%;
+   left:11%;
+   top: 0%;
+}
+
+.hoverimgs{
+  position: fixed;
+  left: 1vw;
+  height: 100vh;
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.hoverimgs img{
+  display: none;
+  width: 100%;
+  margin-top: 7.5vh;
+}
+
+.main{
+  cursor: default;
+  position: absolute;
+  width: 45vw;  
+  left: 50vw;
+  top: 0vh;
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5vw;
+  color: #23431d;
+}
+
+.link{
+ text-decoration-line: none;
+ font-family: neue-haas-unica, sans-serif;
+ font-weight: 400;
+ font-style: italic;
+ color: #23431d;
+}
+
+.main a:hover, .names a:hover, .links a:hover{
+ cursor: pointer;
+ opacity: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #23431d;
+  transition: .2s ease;
+}
+
+.links{
+  position: fixed;
+  left: 1vw;
+  bottom: 1vh;
+  font-family: sans-serif;
+  font-size: 1.5w;
+  color: #23431d;
+}
+
+.preview{
+    position: absolute;
+    width:50vw;
+    height:0vh;
+    margin-top: 5vh;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview img{
+    position: absolute;
+    margin-bottom: 0vh;
+    height:100vh;
+    margin-top: 50vh;
+    left: -40vw;
+    z-index: 1;
+    padding: 0vw;
+}
+
+.preview img:hover{
+    cursor: e-resize;
+}
+
+.addcart{
+  align-self: flex-end;
+  font-family: "Attlia";
+  font-size: 3.2vw;
+  color: #000000;
+  margin-bottom: 5vh;
+} 
+
+#links {
+    color: #23431d;
+}
+
+@media screen and (max-width: 750px),
+
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3),
+    
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2),
+    
+    @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3)
+    
+{
+    
+#loaderimg{
+  width: 20vw;
+  padding-bottom: 10vh;
+}
+    
+.logowrap{
+    z-index: 11;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 12vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .3s ease;
+}
+    
+.logo{
+    font-size: 10vw;
+    top:6vh;
+    margin-top: -3vh;
+    left: 5vw;
+}
+
+#lt{
+   width:50%;
+}
+#lm{
+   width:62%;
+   left:23.5%;
+}
+    
+#lo{
+   width:10%;
+   left:75.5%;
+    background-color: white;
+}
+    
+.links{  
+    line-height: 1;
+    overflow: visible;
+    top:6vh;
+    margin-top: -3vh;
+    bottom:auto;
+    right:5vw;
+    left:auto;
+    height: auto;
+    font-size: 5vw;
+    z-index: 9;
+    color: #23431d;
+}
+    
+ .links a{
+  text-decoration: none;
+  color: #23431d;
+}
+
+.main{
+  font-size: 5vw;
+  width: 90vw;  
+  left: 5vw;
+  top: 25vw;
+ }
+
+ .cursor{
+  display: none !important;
+ }
+    
+  button{
+    font-size: 6vw;
+ }
+    
+.preview{
+    width:100vw;
+    margin-left: 5vw;
+}
+    
+.preview img{
+    position: absolute;
+    height: 37.5vh;
+    margin-left: 25vw;
+    margin-top: 20vh;
+    margin-bottom: 80vh 
+}
