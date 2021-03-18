@@ -137,9 +137,10 @@ a{
 
 .preview{
     position: absolute;
+    display: inline;
     width:50vw;
     height:0vh;
-    margin-top: 5vh;
+    margin-top: 40vh;
     background-color: none;
     display: flex;
     justify-content: center;

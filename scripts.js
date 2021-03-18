@@ -107,6 +107,50 @@ function hidehide() {
     $('#hoverphoto').css('display', 'none');  
     }); 
     
+    $("#2-Feature-8").hover(function(){
+    document.getElementById("hoverphoto").src = "hoverimgs/SubbaCultcha.png";
+    $('#hoverphoto').css('display', 'block'); 
+    }, function(){
+    $('#hoverphoto').css('display', 'none');  
+    }); 
+    
+    $("#2-Feature-9").hover(function(){
+    document.getElementById("hoverphoto").src = "hoverimgs/CHIKA.jpg";
+    $('#hoverphoto').css('display', 'block'); 
+    }, function(){
+    $('#hoverphoto').css('display', 'none');  
+    }); 
+    
+    $("#2-Feature-10").hover(function(){
+    document.getElementById("hoverphoto").src = "hoverimgs/ProtestPress.jpg";
+    $('#hoverphoto').css('display', 'block'); 
+    }, function(){
+    $('#hoverphoto').css('display', 'none');  
+    }); 
+    
+    $("#2-Feature-11").hover(function(){
+    document.getElementById("hoverphoto").src = "hoverimgs/Radiations.jpg";
+    $('#hoverphoto').css('display', 'block'); 
+    }, function(){
+    $('#hoverphoto').css('display', 'none');  
+    }); 
+    
+    $("#2-Feature-12").hover(function(){
+    document.getElementById("hoverphoto").src = "hoverimgs/Sonder.jpg";
+    $('#hoverphoto').css('display', 'block'); 
+    }, function(){
+    $('#hoverphoto').css('display', 'none');  
+    });
+    
+    $("#2-Feature-13").hover(function(){
+    document.getElementById("hoverphoto").src = "hoverimgs/AmritSandhu.png";
+    $('#hoverphoto').css('display', 'block'); 
+    }, function(){
+    $('#hoverphoto').css('display', 'none');  
+    }); 
+    
+
+    
     
     // ISSUE 1 FEATURES
     
